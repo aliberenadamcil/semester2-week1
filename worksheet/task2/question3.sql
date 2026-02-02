@@ -2,6 +2,6 @@
 -- Expected Columns:
 -- DepartmentName, TotalEnrolments
 SELECT DepartmentName,
-       COUNT(*) AS TotalEnrolment
-FROM Enrolment 
+       COUNT(*) AS TotalEnrolments
+FROM enrolments
 GROUP BY DepartmentName;
