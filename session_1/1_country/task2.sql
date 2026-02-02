@@ -12,3 +12,7 @@
 
 -- write your sql code here
 
+SELECT  Country, Population
+FROM countries
+ORDER BY Population DESC
+LIMIT 10;
