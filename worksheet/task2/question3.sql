@@ -1,7 +1,9 @@
 -- For each department, calculate the number of enrolments in its courses.
 -- Expected Columns:
 -- DepartmentName, TotalEnrolments
-SELECT DepartmentName,
+SELECT Department.DepartmentName,
        COUNT(*) AS TotalEnrolments
 FROM Enrolment
-GROUP BY DepartmentName;
+JOIN Course ON Enrolment.CourseId = Course.CourseId
+JOIN Department ON Course.DepartmentId = Department.DepartmentId
+GROUP BY Department.DepartmentName;
