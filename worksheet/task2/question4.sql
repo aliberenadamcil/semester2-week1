@@ -4,7 +4,7 @@
 SELECT Student.StudentId,
        Student.FirstName,
        Student.LastName,
-       Course.CourseName,
+       Course.CourseName
 FROM Enrolment 
 JOIN Student
 ON Enrolment.StudentId = Student.StudentId
