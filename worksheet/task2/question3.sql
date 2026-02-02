@@ -3,5 +3,5 @@
 -- DepartmentName, TotalEnrolments
 SELECT DepartmentName,
        COUNT(*) AS TotalEnrolments
-FROM enrolments
+FROM Enrolments
 GROUP BY DepartmentName;
